@@ -1,0 +1,21 @@
+development: &development
+  protocol: 'http'
+  host: localhost
+  port: 5984
+  prefix: app42_paa_s_rails_couchdb_sample
+  suffix: development
+  username:
+  password:
+
+test:
+  <<: *development
+  suffix: test
+
+production:
+  protocol: 'http'                                               
+  host: 10.0.2.12                  # VM IP
+  port: 52070                  # VM Port
+  prefix: t       # Database Name a/c to prefix and suffix 
+#  suffix: production              # Database Name a/c to  prefix and suffix
+  username: azli7cthhsky7faa         # User Name
+  password: 'c4b4n9gnmerj66ydcsmwz1uj1n8ysiyj'        # Password
